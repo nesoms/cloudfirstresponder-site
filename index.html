@@ -1,24 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cloud First Responder - Welcome</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cloud First Responder</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #0f2c44;
+      color: #ffffff;
+    }
+    header {
+      text-align: center;
+      padding: 4rem 1rem 2rem;
+    }
+    header img {
+      max-width: 120px;
+      margin-bottom: 1rem;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0.5rem 0;
+    }
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.8;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #ffd75f;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+
+    .feature {
+      background: #173d5b;
+      padding: 1rem 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .cta {
+      text-align: center;
+      margin: 4rem 0 2rem;
+    }
+
+    .cta a {
+      background: #ffd75f;
+      color: #0f2c44;
+      padding: 1rem 2rem;
+      font-weight: bold;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 1.1rem;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      opacity: 0.6;
+      padding-bottom: 2rem;
+    }
+
+    @media (max-width: 768px) {
+      .features {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="index.html">Welcome</a>
-            <a href="about.html">About Us</a>
-            <a href="architecture.html">Architecture</a>
-            <a href="contact.html">Contact Us</a>
-        </nav>
-    </header>
-    <main>
-        <h1>🚨 Cloud First Responder</h1>
-        <p>Your AI-powered first line of defense for Microsoft cloud outages and support automation.</p>
-        <p>We leverage Azure technologies and adhere to Microsoft's design principles to ensure a friendly experience.</p>
-    </main>
-    <footer>&copy; 2025 CloudFirstResponder.ai &mdash; All rights reserved</footer>
-</body></html>
+
+  <header>
+    <img src="\images\logo.png" alt="Cloud First Responder Logo" />
+    <h1>Cloud First Responder</h1>
+    <p>Intelligent Support Automation for Microsoft Cloud</p>
+  </header>
+
+  <section>
+    <h2>Why Cloud First Responder?</h2>
+    <p>
+      CFR eliminates human delay and inefficiency during support escalation. It integrates with your monitoring stack to auto-escalate incidents to Microsoft, gather relevant logs, initiate Teams response channels, and guide post-incident recovery.
+    </p>
+  </section>
+
+  <section>
+    <h2>Key Capabilities</h2>
+    <div class="features">
+      <div class="feature">
+        <h3>AI-Powered Escalation</h3>
+        <p>Evaluates telemetry in real-time and determines incident severity automatically.</p>
+      </div>
+      <div class="feature">
+        <h3>Unified Support Integration</h3>
+        <p>Auto-generates Microsoft tickets with structured, context-aware justifications.</p>
+      </div>
+      <div class="feature">
+        <h3>Teams & Email Orchestration</h3>
+        <p>Creates Teams channels, joins email threads, and posts relevant updates without human input.</p>
+      </div>
+      <div class="feature">
+        <h3>Post-Incident Recovery</h3>
+        <p>Recommends configuration improvements and lessons learned, based on AI-driven insights.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Be First. Be Fast. Be Smart.</h2>
+    <a href="#">Request a Trial License</a>
+  </section>
+
+  <footer>
+    <p>Patent Pending – U.S. Application No. 63/838,724 | &copy; 2025 Cloud First Responder</p>
+    <p>Website coming soon: <strong>CloudFirstResponder.ai</strong></p>
+  </footer>
+
+</body>
+</html>
